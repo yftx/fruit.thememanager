@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+	<ImageView android:id="@+id/theme_item_preview"
+		android:layout_width="94dip" android:layout_height="76dp"
+		android:paddingLeft="2dip" android:paddingTop="2dip"
+		android:paddingRight="2dip" android:paddingBottom="4dip"
+		android:scaleType="fitXY" android:background="@drawable/theme_wallpaper_bg" />
+	<ImageView android:id="@+id/theme_item_status"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:paddingRight="10dip" android:src="@drawable/theme_current_item"
+		android:layout_gravity="right" android:visibility="gone" />
+</FrameLayout>

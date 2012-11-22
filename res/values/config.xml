@@ -1,0 +1,9 @@
+<resources>
+    <bool name="config_function_lockscreen">true</bool>
+    
+    <string name="defalt_theme">com.fruit.launcher.theme.fruito</string>    
+    <string name="defalt_launcherIcon">com.fruit.launcher.theme.fruit</string>    
+    <string name="defalt_lockscreen">com.fruit.launcher.theme.fruit</string>    
+    <string name="defalt_wallpaper">com.fruit.launcher.theme.fruit</string>    
+    <string name="defalt_lockWallpaper">com.fruit.launcher.theme.fruit</string>    
+</resources>

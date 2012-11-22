@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content" android:layout_height="fill_parent">
+
+	<ImageView android:id="@+id/theme_preview_item"
+		android:layout_width="180dip" android:layout_height="267dip"
+		android:layout_gravity="top|left|center" android:paddingLeft="4dip"
+		android:paddingRight="4dip" android:paddingTop="2dip" android:paddingBottom="6dip"
+		android:background="@drawable/theme_item_bg" android:scaleType="fitXY" />
+</FrameLayout>

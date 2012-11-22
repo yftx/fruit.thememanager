@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<!--
+		/* * Copyright (C) 2008 The Android Open Source Project * * Licensed
+		under the Apache License, Version 2.0 (the "License"); * you may not
+		use this file except in compliance with the License. * You may obtain
+		a copy of the License at * *
+		http://www.apache.org/licenses/LICENSE-2.0 * * Unless required by
+		applicable law or agreed to in writing, software * distributed under
+		the License is distributed on an "AS IS" BASIS, * WITHOUT WARRANTIES
+		OR CONDITIONS OF ANY KIND, either express or implied. * See the
+		License for the specific language governing permissions and *
+		limitations under the License. */
+	-->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<string name="application_name">我的主题</string>
+
+	<string name="permlab_read_settings">"读取主屏幕的设置和快捷方式"</string>
+	<string name="permdesc_read_settings">"允许应用程序读取主屏幕的设置和快捷方式。"</string>
+	<string name="permlab_write_settings">"写入主屏幕的设置和快捷方式"</string>
+	<string name="permdesc_write_settings">"允许应用程序更改主屏幕的设置和快捷方式。"</string>
+
+    <string name="activity_not_found">"您的手机上未安装应用程序。"</string>
+    <string name="chooser_wallpaper">"选择壁纸来源"</string>
+    
+    <string name="theme_app_name">"我的主题"</string>
+    <string name="theme_choose_theme">"选择主题"</string>
+    <string name="theme_change_local">"更改局部主题"</string>
+    <string name="theme_wallpaper">"桌面壁纸"</string>
+    <string name="theme_app_icon">"图标"</string> 
+    <string name="theme_lock_wallpaper">锁屏壁纸</string>
+    <string name="theme_lockscreen">锁屏</string>
+    <string name="theme_wallpaper_more">"更多壁纸"</string>
+    <string name="theme_icon_more">"更多图标"</string>
+    <string name="theme_apply">应用</string>
+    <string name="theme_applying">应用中，请稍候...</string>
+    <string name="apply_theme_failed">应用失败，建议更新到最新版本</string>
+    <string name="theme_apply_time_out">应用超时</string>
+
+	<string name="theme_name_default">"默认"</string>
+	<string name="theme_author_default">"默认"</string>
+	<string name="theme_online">更多在线主题...</string>
+
+</resources>

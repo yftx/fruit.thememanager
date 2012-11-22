@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.fruit.thememanager" android:versionCode="201"
+	android:versionName="2.0.1">
+
+	<permission android:name="com.fruit.thememanager.permission.READ_SETTINGS"
+		android:permissionGroup="android.permission-group.SYSTEM_TOOLS"
+		android:protectionLevel="normal" android:label="@string/permlab_read_settings"
+		android:description="@string/permdesc_read_settings" />
+	<permission android:name="com.fruit.thememanager.permission.WRITE_SETTINGS"
+		android:permissionGroup="android.permission-group.SYSTEM_TOOLS"
+		android:protectionLevel="normal" android:label="@string/permlab_write_settings"
+		android:description="@string/permdesc_write_settings" />
+
+	<uses-permission android:name="android.permission.SET_WALLPAPER" />
+
+	<uses-sdk android:minSdkVersion="8" android:targetSdkVersion="15"/>
+
+	<application android:icon="@drawable/icon" android:label="@string/application_name">
+		<activity android:name="com.fruit.thememanager.ThemeSettingActivity"
+			android:label="@string/theme_app_name" android:icon="@drawable/icon"
+			android:screenOrientation="portrait"
+			android:excludeFromRecents="true"
+			android:theme="@android:style/Theme.Wallpaper.NoTitleBar">
+			<intent-filter>
+				<action android:name="com.fruit.action.THEME" />
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name="com.fruit.thememanager.ThemeCustomActivity"
+			android:theme="@android:style/Theme.Wallpaper.NoTitleBar"
+			android:screenOrientation="portrait" />
+
+		<activity android:name="com.fruit.thememanager.ThemeCustomOptActivity"
+			android:theme="@android:style/Theme.Wallpaper.NoTitleBar"
+			android:screenOrientation="portrait" />
+
+		<activity android:name="ThemeApplyActivity"  android:theme="@android:style/Theme.NoTitleBar"
+			android:screenOrientation="portrait"/>
+
+		<!--
+			The settings provider contains Home's data, like the workspace
+			favorites
+		-->
+		<provider android:name="ThemeProvider" android:authorities="com.fruit.thememanager.Settings"
+			android:writePermission="com.fruit.thememanager.permission.WRITE_SETTINGS"
+			android:readPermission="com.fruit.thememanager.permission.READ_SETTINGS"
+			android:multiprocess="true" />
+
+	</application>
+</manifest>

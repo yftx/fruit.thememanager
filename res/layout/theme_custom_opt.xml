@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="@drawable/theme_bg">
+
+	<TextView android:id="@+id/theme_custom_title"
+		android:layout_width="fill_parent" android:layout_height="45dip"
+		android:gravity="center" android:textSize="18.0sp" android:textColor="@android:color/white" />
+
+	<GridView android:id="@+id/theme_custom_show"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:paddingTop="@dimen/theme_padding_top"
+		android:layout_marginBottom="10dip" android:paddingLeft="6dip"
+		android:paddingRight="6dip" android:horizontalSpacing="5dip"
+		android:verticalSpacing="8.0dip" android:layout_gravity="center_horizontal"
+		android:gravity="center" android:stretchMode="columnWidth"
+		android:numColumns="3" android:layout_weight="1.0" />
+
+	<FrameLayout android:id="@+id/theme_custom_more_bar"
+		android:layout_width="fill_parent" android:layout_height="50dip"
+		android:background="@drawable/theme_buttom_bar_bg">
+		<TextView android:id="@+id/theme_custom_more"
+			android:layout_gravity="center" android:layout_width="wrap_content"
+			android:layout_height="40.0dip" android:paddingLeft="10.0dip"
+			android:paddingRight="10.0dip" android:textSize="16.0dip"
+			android:textColor="@android:color/black" android:gravity="center"
+			android:background="@drawable/theme_button" android:clickable="true" />
+	</FrameLayout>
+
+</LinearLayout>

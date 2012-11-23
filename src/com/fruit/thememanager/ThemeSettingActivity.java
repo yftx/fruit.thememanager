@@ -99,8 +99,8 @@ public class ThemeSettingActivity extends Activity implements View.OnClickListen
 			
 			try{
 				Intent intent = new Intent();
-				ComponentName volloMarket = new ComponentName("com.vollo.Market", "com.vollo.Market.marketBrowser");
-				intent.setComponent(volloMarket);
+				ComponentName market = new ComponentName("com.vollo.Market", "com.vollo.Market.marketBrowser");
+				intent.setComponent(market);
 				intent.setAction(Intent.ACTION_VIEW);  
 				//intent.setAction("android.intent.category.MIAN");
 				intent.putExtra("type", 4);

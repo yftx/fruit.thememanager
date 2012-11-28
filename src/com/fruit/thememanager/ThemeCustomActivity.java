@@ -5,10 +5,13 @@ import android.content.Intent;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 
 public class ThemeCustomActivity extends Activity implements View.OnClickListener {
 
+	private static final String TAG = "ThemeCustomActivity";
+	
 	private static final int REQUEST_THEME_ITEM = 60;
 	
 	private ListItemThemeElement mListItemWallpaper;
@@ -22,7 +25,7 @@ public class ThemeCustomActivity extends Activity implements View.OnClickListene
 		super.onCreate(savedInstanceState);
 
 		setContentView(R.layout.theme_custom);
-		initViews();
+		//initViews();
 	}
 
     @Override
@@ -101,4 +104,67 @@ public class ThemeCustomActivity extends Activity implements View.OnClickListene
 		startActivityForResult(intent, REQUEST_THEME_ITEM);
 		overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left);	
 	}
+
+	/* (non-Javadoc)
+	 * @see android.app.Activity#onDestroy()
+	 */
+	@Override
+	protected void onDestroy() {
+		// TODO Auto-generated method stub
+		super.onDestroy();
+		Log.i(TAG,"onDestroy");
+	}
+
+	/* (non-Javadoc)
+	 * @see android.app.Activity#onPause()
+	 */
+	@Override
+	protected void onPause() {
+		// TODO Auto-generated method stub
+		super.onPause();
+		Log.i(TAG,"onPause");
+	}
+
+	/* (non-Javadoc)
+	 * @see android.app.Activity#onRestart()
+	 */
+	@Override
+	protected void onRestart() {
+		// TODO Auto-generated method stub
+		super.onRestart();
+		Log.i(TAG,"onRestart");
+	}
+
+	/* (non-Javadoc)
+	 * @see android.app.Activity#onResume()
+	 */
+	@Override
+	protected void onResume() {
+		// TODO Auto-generated method stub
+		super.onResume();
+		Log.i(TAG,"onResume");
+		initViews();
+	}
+
+	/* (non-Javadoc)
+	 * @see android.app.Activity#onStart()
+	 */
+	@Override
+	protected void onStart() {
+		// TODO Auto-generated method stub
+		super.onStart();
+		Log.i(TAG,"onStart");
+	}
+
+	/* (non-Javadoc)
+	 * @see android.app.Activity#onStop()
+	 */
+	@Override
+	protected void onStop() {
+		// TODO Auto-generated method stub
+		super.onStop();
+		Log.i(TAG,"onStop");
+	}
+	
+	
 }

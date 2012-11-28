@@ -48,7 +48,7 @@ public class ThemeSettingActivity extends Activity implements View.OnClickListen
 		
 		String theme = mThemeMgr.getCurrentTheme(ThemeUtils.CATEGORY_THEME);
 		Log.i(TAG, "onResume mThemeName="+mThemeName+", theme="+theme);
-		if(mbForceUpdate || !theme.equals(mThemeName)){
+		/*if(mbForceUpdate || !theme.equals(mThemeName))*/ {
 			mThemeName = new String(theme);
 			mArrayListTheme = mThemeMgr.getAllTheme(ThemeUtils.CATEGORY_THEME);
 			mAdapter = new ThemeShowAdapter(this, mArrayListTheme, ThemeUtils.THUMBIMG_THEME); 
@@ -56,6 +56,7 @@ public class ThemeSettingActivity extends Activity implements View.OnClickListen
 			mbForceUpdate = false;
 		}
 	}
+	
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {

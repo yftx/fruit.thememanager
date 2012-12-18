@@ -37,8 +37,8 @@
     <string name="apply_theme_failed">应用失败，建议更新到最新版本</string>
     <string name="theme_apply_time_out">应用超时</string>
 
-	<string name="theme_name_default">"默认"</string>
-	<string name="theme_author_default">"默认"</string>
+	<string name="theme_name_default">原生</string>
+	<string name="theme_author_default">原生</string>
 	<string name="theme_online">免费主题下载</string>
 
 </resources>

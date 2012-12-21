@@ -53,7 +53,7 @@ public class ThemeCustomOptActivity extends Activity
 		super.onResume();
 		
 		String theme = mThemeMgr.getCurrentTheme(mThemeCategory);
-		Log.i(TAG, "onResume mThemeName="+mThemeName+", theme="+theme);
+		Log.d(TAG, "onResume mThemeName="+mThemeName+", theme="+theme);
 		if(mbForceUpdate || !theme.equals(mThemeName)){
 			mThemeName = new String(theme);
 			mArrayListTheme = mThemeMgr.getAllTheme(mThemeCategory);

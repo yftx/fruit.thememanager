@@ -112,7 +112,7 @@ public class ThemeCustomActivity extends Activity implements View.OnClickListene
 	protected void onDestroy() {
 		// TODO Auto-generated method stub
 		super.onDestroy();
-		Log.i(TAG,"onDestroy");
+		Log.d(TAG,"onDestroy");
 	}
 
 	/* (non-Javadoc)
@@ -122,7 +122,7 @@ public class ThemeCustomActivity extends Activity implements View.OnClickListene
 	protected void onPause() {
 		// TODO Auto-generated method stub
 		super.onPause();
-		Log.i(TAG,"onPause");
+		Log.d(TAG,"onPause");
 	}
 
 	/* (non-Javadoc)
@@ -132,7 +132,7 @@ public class ThemeCustomActivity extends Activity implements View.OnClickListene
 	protected void onRestart() {
 		// TODO Auto-generated method stub
 		super.onRestart();
-		Log.i(TAG,"onRestart");
+		Log.d(TAG,"onRestart");
 	}
 
 	/* (non-Javadoc)
@@ -142,7 +142,7 @@ public class ThemeCustomActivity extends Activity implements View.OnClickListene
 	protected void onResume() {
 		// TODO Auto-generated method stub
 		super.onResume();
-		Log.i(TAG,"onResume");
+		Log.d(TAG,"onResume");
 		initViews();
 	}
 
@@ -153,7 +153,7 @@ public class ThemeCustomActivity extends Activity implements View.OnClickListene
 	protected void onStart() {
 		// TODO Auto-generated method stub
 		super.onStart();
-		Log.i(TAG,"onStart");
+		Log.d(TAG,"onStart");
 	}
 
 	/* (non-Javadoc)
@@ -163,7 +163,7 @@ public class ThemeCustomActivity extends Activity implements View.OnClickListene
 	protected void onStop() {
 		// TODO Auto-generated method stub
 		super.onStop();
-		Log.i(TAG,"onStop");
+		Log.d(TAG,"onStop");
 	}
 	
 	

@@ -38,7 +38,7 @@ public class ThemeSettingActivity extends Activity implements View.OnClickListen
 
 		setContentView(R.layout.theme_main);
 		initViews();
-		Log.i(TAG, "onCreate");
+		Log.d(TAG, "onCreate");
 	}
 
 	@Override
@@ -47,7 +47,7 @@ public class ThemeSettingActivity extends Activity implements View.OnClickListen
 		super.onResume();
 		
 		String theme = mThemeMgr.getCurrentTheme(ThemeUtils.CATEGORY_THEME);
-		Log.i(TAG, "onResume mThemeName="+mThemeName+", theme="+theme);
+		Log.d(TAG, "onResume mThemeName="+mThemeName+", theme="+theme);
 		/*if(mbForceUpdate || !theme.equals(mThemeName))*/ {
 			mThemeName = new String(theme);
 			mArrayListTheme = mThemeMgr.getAllTheme(ThemeUtils.CATEGORY_THEME);

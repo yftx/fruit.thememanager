@@ -69,7 +69,7 @@ public final class ThemeManager {
     	checkCurrentTheme(ThemeUtils.CATEGORY_LOCKSCREEN, mThemeLockscreenName);
     	checkCurrentTheme(ThemeUtils.CATEGORY_WALLPAPER, mThemeWallpaperName);
     	checkCurrentTheme(ThemeUtils.CATEGORY_LOCKWALLPAPER, mThemeLockWallpaperName);
-    	if(DEBUG ) Log.i(TAG, "create ThemeManager, theme="+mThemeName+", icon="+mThemeLauncherName+", wp="+
+    	if(DEBUG ) Log.d(TAG, "create ThemeManager, theme="+mThemeName+", icon="+mThemeLauncherName+", wp="+
     			mThemeWallpaperName+", lock="+mThemeLockscreenName+", lock wp="+mThemeLockWallpaperName);
 	}
 	
@@ -214,7 +214,7 @@ public final class ThemeManager {
 			break;
 		}
 		
-		if(DEBUG)  Log.i(TAG, "updateCurrentTheme, theme="+mThemeName+", icon="+mThemeLauncherName+", wp="+
+		if(DEBUG)  Log.d(TAG, "updateCurrentTheme, theme="+mThemeName+", icon="+mThemeLauncherName+", wp="+
     			mThemeWallpaperName+", lock="+mThemeLockscreenName+", lock wp="+mThemeLockWallpaperName);
 	}
 	

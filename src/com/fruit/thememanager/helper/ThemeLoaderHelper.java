@@ -26,7 +26,7 @@ public class ThemeLoaderHelper {
 	public static ThemeInfoLoader getThemeInfoLoader(ThemeType themeType) {
 		ThemeInfoLoader loader = null;
 
-		Log.i("ThemeLoaderHelper", "Theme type=" + themeType);
+		Log.d("ThemeLoaderHelper", "Theme type=" + themeType);
 		switch (themeType) {
 		case THEME_DEFAULT:
 			loader = ThemeInfoDefaultLoader.getInstance();

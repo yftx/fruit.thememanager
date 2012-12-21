@@ -38,7 +38,7 @@
     <string name="theme_apply_time_out">应用超时</string>
 
 	<string name="theme_name_default">原生</string>
-	<string name="theme_author_default">原生</string>
+	<string name="theme_author_default">FDT</string>
 	<string name="theme_online">免费主题下载</string>
 
 </resources>

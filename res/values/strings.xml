@@ -45,8 +45,8 @@
     <string name="theme_wallpaper_more">Get more wallpaper</string>
     <string name="theme_icon_more">Get more icons</string>
     
-    <string name="theme_name_default">Default</string>
-    <string name="theme_author_default">Default</string>
+    <string name="theme_name_default">Native</string>
+    <string name="theme_author_default">FDT</string>
     <string name="theme_description_default">1</string>
     <string name="theme_version_default">1</string>
     <string name="theme_support_version_default">15</string>

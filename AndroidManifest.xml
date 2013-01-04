@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-	package="com.fruit.thememanager" android:versionCode="204"
-	android:versionName="2.0.3">
+	package="com.fruit.thememanager" android:versionCode="205"
+	android:versionName="2.0.4">
 
 	<permission android:name="com.fruit.thememanager.permission.READ_SETTINGS"
 		android:permissionGroup="android.permission-group.SYSTEM_TOOLS"

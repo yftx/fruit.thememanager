@@ -141,17 +141,29 @@ public final class ThemeManager {
 
         if(DEBUG) Log.d(TAG, "getAllTheme category="+category+", currentTheme="+currentTheme);
         //add default theme
-        if(arrayDef != null){
-	        for (ThemeInfo item:arrayDef) {
-	        	ThemeInfo installInfo = new ThemeInfo(item); 
-	            arrayAllTheme.add(installInfo);            
-	        }
-        }
+//        if(arrayDef != null){
+//	        for (ThemeInfo item:arrayDef) {
+//	        	ThemeInfo installInfo = new ThemeInfo(item); 
+//	            arrayAllTheme.add(installInfo);            
+//	        }
+//        }
+        
         //add custom theme
         if(arrayCus != null){
 	        for (ThemeInfo item:arrayCus) {
 	        	ThemeInfo installInfo = new ThemeInfo(item); 
-	            arrayAllTheme.add(installInfo);            
+	        	if(item.mPkgName != null && item.mPkgName.equals(ThemeUtils.DEFAULT_THEME_PACKAGENAME)){
+	        		arrayAllTheme.add(installInfo);   
+	        	}
+	        }
+        }
+        
+        if(arrayCus != null){
+	        for (ThemeInfo item:arrayCus) {
+	        	ThemeInfo installInfo = new ThemeInfo(item); 
+	        	if(!(item.mPkgName != null && item.mPkgName.equals(ThemeUtils.DEFAULT_THEME_PACKAGENAME))){
+	        		arrayAllTheme.add(installInfo);         
+	        	}
 	        }
         }
         

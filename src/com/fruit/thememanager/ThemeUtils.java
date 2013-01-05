@@ -6,7 +6,7 @@ import android.net.Uri;
 public class ThemeUtils {
 
 	public final static String THEME_PACKAGE_TOKEN = ThemeApplyActivity.LAUNCHER_ACTIVY + ".theme.";
-	public final static String DEFAULT_THEME_PACKAGENAME = "theme_defalt";
+	public final static String DEFAULT_THEME_PACKAGENAME = "com.fruit.launcher.theme.common";//"theme_defalt";
 	
 	public final static String ACTION_PICK_THEME = ThemeApplyActivity.LAUNCHER_ACTIVY + ".PICK_THEME";
 

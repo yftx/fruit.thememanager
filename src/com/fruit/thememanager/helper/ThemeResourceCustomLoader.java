@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.drawable.Drawable;
+import android.util.Log;
 
 public class ThemeResourceCustomLoader implements ThemeResourceLoader {
 
@@ -23,7 +24,20 @@ public class ThemeResourceCustomLoader implements ThemeResourceLoader {
 	@Override
 	public Drawable loadDrawable(String resName) {
 		// TODO Auto-generated method stub
-		return mThemeRes.loadDrawable(resName);
+		Drawable d = null;
+		
+		try {
+			d =  mThemeRes.loadDrawable(resName);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			d = null;
+		} catch (OutOfMemoryError e) {
+			e.printStackTrace();
+			d = null;			
+		}
+		
+		return d;
 	}
 
 	@Override

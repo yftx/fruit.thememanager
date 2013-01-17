@@ -3,6 +3,7 @@ package com.fruit.thememanager.helper;
 import android.content.Context;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.content.res.Resources;
+import android.content.res.Resources.NotFoundException;
 import android.content.res.XmlResourceParser;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -47,16 +48,28 @@ public final class ThemeResources {
 	public final Drawable loadDrawable(String resName) {
 		final Resources res = mResources;
 		final String pkgName = mResPkgName;
+		Drawable d = null;
+		
 		if (res != null && pkgName != null) {
 			int resId = res.getIdentifier(resName, "drawable", mResPkgName);
 
-			if (resId > 0) {
-				return mResources.getDrawable(resId);
+			if (resId > 0) {				
+				try {
+					d = mResources.getDrawable(resId);
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+					d = null;
+				} catch (OutOfMemoryError e) {
+					e.printStackTrace();
+					d = null;
+					Log.w(TAG, "loadDrawable fail! OutOfMemoryError");
+				}
 			}else{
 				Log.w(TAG, "loadDrawable fail! resName="+resName);
 			}
 		}
-		return null;
+		return d;
 	}
 
 	public final Bitmap loadBitmap(String resName) {
